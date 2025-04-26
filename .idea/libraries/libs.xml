@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SIMULADOR/libs/jcommon-1.0.24.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SIMULADOR/libs/jfreechart-1.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SIMULADOR/libs/jackson-databind-2.9.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SIMULADOR/libs/jackson-annotations-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SIMULADOR/libs/jackson-core-2.9.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
