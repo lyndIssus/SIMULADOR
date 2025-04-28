@@ -3,6 +3,7 @@ package principal;
 import algoritmos.FIFO;
 import algoritmos.Clock;
 import algoritmos.AlgoritmoSubstituicao;
+import algoritmos.LRU;
 import grafico.GraficoIndividual;
 import util.ConfiguracaoSimulacao;
 import util.JacksonJSON;
@@ -35,6 +36,10 @@ public class Main {
             Clock clock = new Clock();
             ResultadoSimulacao resultadoClock = executarAlgoritmo(clock, "Clock", config, referencias);
             resultadosSimulacoes.add(resultadoClock);
+
+            LRU lru = new LRU();
+            ResultadoSimulacao resultadoLRU = executarAlgoritmo(lru, "LRU", config, referencias);
+            resultadosSimulacoes.add(resultadoLRU);
 
             GraficoComparativo.gerarGradeDeGraficos(resultadosSimulacoes);
             GraficoTaxaFalta.gerarGraficoTaxa(resultadosSimulacoes);
