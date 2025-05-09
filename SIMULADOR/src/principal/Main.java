@@ -1,9 +1,6 @@
 package principal;
 
-import algoritmos.FIFO;
-import algoritmos.Clock;
-import algoritmos.AlgoritmoSubstituicao;
-import algoritmos.LRU;
+import algoritmos.*;
 import grafico.GraficoIndividual;
 import util.ConfiguracaoSimulacao;
 import util.JacksonJSON;
@@ -40,6 +37,10 @@ public class Main {
             LRU lru = new LRU();
             ResultadoSimulacao resultadoLRU = executarAlgoritmo(lru, "LRU", config, referencias);
             resultadosSimulacoes.add(resultadoLRU);
+
+            Aging aging = new Aging();
+            ResultadoSimulacao resultadoAging = executarAlgoritmo(aging, "Aging", config, referencias);
+            resultadosSimulacoes.add(resultadoAging);
 
             GraficoComparativo.gerarGradeDeGraficos(resultadosSimulacoes);
             GraficoTaxaFalta.gerarGraficoTaxa(resultadosSimulacoes);
